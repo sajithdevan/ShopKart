@@ -1,3 +1,6 @@
 
 Shopping Kart By Sajithdevan
-Using Html, CSS, Javascript, Bootstrap
+
+Live Preview
+https://sajithdevan.github.io/ShopKart/
+
