@@ -8,7 +8,7 @@ $(document).ready(function () {
 		$.each(data.items, function (i, f) {
 			var tblRow =
 
-				"<div class='col-lg-4 col-md-6 mb-4'><div class='card h-100'><img class='card-img-top' src='https://d1xbedroeo1z0l.cloudfront.net/fit-in/400x600/Myntra.com/XRVOS_myn_8809813_1100x1100.jpg' alt=''/><div class='card-body'><h4 class='card-Dt'>" + f.name + "</h4><h5 class='card-Dt'><b>Rs. " + f.price.actual + "</b>&nbsp;&nbsp;Rs. " + f.price.display + "</h5><h6 class='card-Dt'>" + f.discount + "% Off</h6></div><div class='card-footer'><button onclick='addtocart(" + f.id + ")' class='Add-Kart' id='ADD_Kt" + f.id + "' data-name='" + f.name + "' data-price='" + f.price.actual + "'>Add to Cart</button></div></div>"
+				"<div class='col-lg-4 col-md-6 mb-4'><div class='card h-100'><div class='card-img-top'><img class='img-responsive' src='https://d1xbedroeo1z0l.cloudfront.net/fit-in/400x600/Myntra.com/XRVOS_myn_8809813_1100x1100.jpg' alt='" + f.name + "' title='" + f.name + "' /></div><div class='card-body'><h4 class='card-Dt'>" + f.name + "</h4><h5 class='card-Dt'><b>Rs. " + f.price.actual + "</b>&nbsp;&nbsp;Rs. " + f.price.display + "</h5><h6 class='card-Dt'>" + f.discount + "% Off</h6></div><div class='card-footer'><button onclick='addtocart(" + f.id + ")' class='Add-Kart' id='ADD_Kt" + f.id + "' data-name='" + f.name + "' data-price='" + f.price.actual + "'>Add to Cart</button></div></div>"
 
 			$(tblRow).appendTo('#Items-data');
 		});

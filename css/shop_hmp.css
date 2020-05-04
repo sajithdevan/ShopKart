@@ -15,7 +15,7 @@ body {
 .td-cnt,
 .Cart-Img img,
 .Cart-Img,
-.td-min {
+.td-min,.img-responsive,.card-img-top {
 	display: inline-block;
 	position: relative;
 }
@@ -113,12 +113,18 @@ h5.card-Dt,
 }
 
 .Total-H6 {
-	color: #3f48cc
+	color: #ff9900;
 }
 
 h6.card-Dt,
 .Disct {
 	color: #009925;
+}
+
+.img-responsive {
+	 max-width: 100%;
+	 max-height: 100%;
+	 vertical-align: middle;
 }
 
 .card-body {
@@ -816,12 +822,10 @@ img {
 .Tl-h6 {
 	float: right;
 	color: #3f48cc;
-	background: #e3e4f1;
 	font-weight: bold;
 }
 
 .Tl-h6 {
-	border-top: 1px dashed #ddd;
 	padding: 12px;
 	text-align: center;
 }
@@ -888,12 +892,11 @@ img {
 	padding-top: 7px;
 }
 
-img.card-img-top {
-	max-height: 235px;
-	max-width: 100%;
+.card-img-top {
+	min-height: 235px;
 }
 
-img.card-img-top,
+.card-img-top,
 .card-body {
 	padding: 12px;
 }
@@ -901,12 +904,12 @@ img.card-img-top,
 
 /* media Query */
 
-@media (min-width: 768px) {
+@media (min-width:1200px) and (max-width:1600px) { 
 	.Flr_cls {
 		display: none;
 	}
-	img.card-img-top {
-		max-height: 325px;
+	.card-img-top {
+		min-height: 325px;
 	}
 	#cart:after {
 		top: 13px;
@@ -929,7 +932,7 @@ img.card-img-top,
 
 /* // Mobile Media Query */
 
-@media (min-width:320px) and (max-width:768px) {
+@media (min-width:320px) and (max-width:1000px) {
 	.Act-tab {
 		background: #ffc;
 		font-weight: bold;
@@ -1046,8 +1049,8 @@ img.card-img-top,
 		width: 24px;
 	}
 	.Flr-13 {
-		-webkit-box-flex: 1;
-		flex: 1 1 0%;
+	    -webkit-box-flex: 1;
+    min-width: 50%;
 	}
 	.Flr-1d {
 		overflow: hidden;
@@ -1092,9 +1095,7 @@ img.card-img-top,
 	.r-h3s6tt {
 		height: 48px;
 	}
-	.r-1ovo9ad {
-		width: 360px;
-	}
+
 	.r-op4f77 {
 		color: rgb(33, 33, 33);
 	}
@@ -1112,12 +1113,10 @@ img.card-img-top,
 		transition: opacity 0.3s ease-out 0s;
 	}
 	.List-12 .col-lg-4.col-md-6.mb-4 {
-		padding: 0;
-		-webkit-box-flex: 1;
-		flex: 1 1 0%;
-		display: inline-flex;
-		max-width: 50%;
-		margin: 0 !important;
+	    padding: 0;
+    display: inline-block;
+    width: 50%;
+    margin: 0 !important;
 	}
 	.List-12 .card.h-100 {
 		border-radius: 0px;
